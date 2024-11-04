@@ -7,10 +7,4 @@ Write-Host "${VALUE}"
 # Case : "..." : 문자열의 변수가 보관이 된다. = ex. $VALUE = "String"
 #        '...' : 리터럴을 지정하여 값을 그대로 출력한다. = ex. $VALUE = 'String'
 #        $(..) : 개체의 속성을 보관이 된다. = ex. $($VALUE + Value)
-
-# Profile
-# Description	        경로
-# 모든 사용자, 모든 호스트	$PSHOME\Profile.ps1
-# 모든 사용자, 현재 호스트	$PSHOME\Microsoft.PowerShell_profile.ps1
-# 현재 사용자, 모든 호스트	$Home[My ]Documents\PowerShell\Profile.ps1
-# 현재 사용자, 현재 호스트	$Home[My ]Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+# Waring : 반드시 [#, Comment]는 스크립트에 있는 코드들과 같은 라인에 있어서는 안된다.
