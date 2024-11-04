@@ -15,14 +15,3 @@ $Profile | Select-Object *
 # CurrentUserAllHosts    : C:\Users\gunwo\Documents\PowerShell\profile.ps1
 # CurrentUserCurrentHost : C:\Users\gunwo\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 # Length                 : 68
-
-New-Item `
--ItemType "file" `
--Value 'Write-Host "Hello <User>" -foregroundcolor Green' `
--Path $Profile.CurrentUserCurrentHost -Force
-# Note : New-Item  : Current User or Host Create Profile
-#        -ItemType : 생성하고자 하는 파일의 유형을 [File]로 지정한다.
-#        -Value : 생성할 파일에 추가될 내용을 추가한다.
-#        -foregroundcolor : Text Color를 Green으로 지정한다.
-#        -Path  : 파일이 생성할 경로를 지정하여 [$Profile.CurrentUserCurrentHost]은 Powershell의 기본 프로필이다.
-#        -Force : 이미 존재하는 파일이 있을 경우 Override[덮어쓰기]를 한다. = << 와 비슷한 개념?
