@@ -1,7 +1,7 @@
-New-Item `
--ItemType "file" `
--Value 'Write-Host "Hello <User>" -foregroundcolor Green' `
--Path $Profile.CurrentUserCurrentHost -Force
+#New-Item `
+#-ItemType "file" `
+#-Value 'Write-Host "Hello <User>" -foregroundcolor Green' `
+#-Path $Profile.CurrentUserCurrentHost -Force
 # Note : New-Item  : Current User or Host Create Profile
 #        -ItemType : 생성하고자 하는 파일의 유형을 [File]로 지정한다.
 #        -Value : 생성할 파일에 추가될 내용을 추가한다.
@@ -18,10 +18,10 @@ function Test{
                 Mandatory,
                 HelpMessage = "File Create path"
         )]
-        # Waring : [Parameter()]는 function 내부 Scope에 존재해야 오류가 생기지 않는다.
 
         $Path
     )
+    # Waring : [Parameter()]는 function 내부 Scope에 존재해야 오류가 생기지 않는다.
 
     If (-Not $Path -eq '')
     {
